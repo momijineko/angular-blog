@@ -27,3 +27,7 @@ jobs:
     - run: npm ci
     - run: npm run build --if-present
     - run: npm test
+    - name: Angular Deploy gh-pages Actions
+      uses: AhsanAyaz/angular-deploy-gh-pages-actions@v1.3.1
+      with:
+        github_access_token: 1eb2f4577f3292acd2aefba731412ca0d20d1b5c
