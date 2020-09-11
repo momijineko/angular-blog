@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --prod --output-path docs --base-href /angular-blog/",
+    "build": "ng build --prod --output-path docs --base-href https://momijineko.github.io/angular-blog/",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
