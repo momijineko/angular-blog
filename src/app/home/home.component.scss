@@ -1,0 +1,70 @@
+mat-paginator {
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+.card {
+  max-width: 1000px;
+  margin: 20px auto;
+  .spacer {
+    flex: 1 1 auto;
+  }
+
+  // mat-card-title
+  a {
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.87);
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  mat-card-actions {
+    text-align: right;
+  }
+}
+
+mat-card-content {
+  padding: 15px;
+  max-height: 300px;
+  overflow: hidden;
+}
+
+// 蒙版
+.mask {
+  -webkit-transition: max-height 0.32s cubic-bezier(0.95, 0.05, 0.795, 0.035),
+    -webkit-mask-size 0.22s cubic-bezier(0.95, 0.05, 0.795, 0.035);
+  transition: max-height 0.32s cubic-bezier(0.95, 0.05, 0.795, 0.035),
+    -webkit-mask-size 0.22s cubic-bezier(0.95, 0.05, 0.795, 0.035);
+  transition: mask-size 0.22s cubic-bezier(0.95, 0.05, 0.795, 0.035),
+    max-height 0.32s cubic-bezier(0.95, 0.05, 0.795, 0.035);
+  transition: mask-size 0.22s cubic-bezier(0.95, 0.05, 0.795, 0.035),
+    max-height 0.32s cubic-bezier(0.95, 0.05, 0.795, 0.035),
+    -webkit-mask-size 0.22s cubic-bezier(0.95, 0.05, 0.795, 0.035);
+  -webkit-mask-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#1a1a1a),
+    to(transparent)
+  );
+  -webkit-mask-image: linear-gradient(
+    #1a1a1a calc(100% - 2.5rem),
+    transparent calc(100% - 0.1rem)
+  );
+  mask-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#1a1a1a),
+    to(transparent)
+  );
+  mask-image: linear-gradient(
+    #1a1a1a calc(100% - 2.5rem),
+    transparent calc(100% - 0.1rem)
+  );
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+}

@@ -1,0 +1,15 @@
+<mat-card class="card">
+  <img
+    mat-card-image
+    src="https://source.unsplash.com/random/800x200"
+    alt="photo"
+  />
+  <mat-card-header>
+    <mat-card-title>关于我</mat-card-title>
+  </mat-card-header>
+  <mat-divider [inset]="false"></mat-divider>
+
+  <mat-card-content>
+    <markdown [src]="'/assets/md/about.md'" ngPreserveWhitespaces> </markdown>
+  </mat-card-content>
+</mat-card>

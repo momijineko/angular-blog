@@ -1,0 +1,12 @@
+.card {
+  max-width: 1000px;
+  margin: 20px auto;
+
+  mat-card-title {
+    font-size: 30px;
+  }
+
+  mat-card-content {
+    padding: 20px;
+  }
+}
